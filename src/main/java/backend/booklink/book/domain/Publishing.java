@@ -1,18 +1,19 @@
 package backend.booklink.book.domain;
 
 import jakarta.persistence.Embeddable;
-import java.time.LocalDateTime;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
 
 @Builder
 @Getter
 @Embeddable
 @AllArgsConstructor
 @NoArgsConstructor
-public class PublishingInfo {
+public class Publishing {
 
     private String publisher;
     private LocalDateTime publishedDate;

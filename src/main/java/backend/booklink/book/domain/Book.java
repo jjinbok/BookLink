@@ -24,13 +24,13 @@ public class Book {
     private int pageCount;
 
     @Embedded
-    private PublishingInfo publishingInfo;
+    private Publishing publishing;
 
     @Builder
-    public Book(String title, String author, PublishingInfo publishingInfo, String description, int pageCount) {
+    public Book(String title, String author, Publishing publishing, String description, int pageCount) {
         this.title = title;
         this.author = author;
-        this.publishingInfo = publishingInfo;
+        this.publishing = publishing;
         this.description = description;
         this.pageCount = pageCount;
     }
